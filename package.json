@@ -1,0 +1,37 @@
+{
+  "name": "cypress-cucumber-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runall": "npx cypress run --spec \"**/*.feature\"",
+    "sauce-login": "npx cypress-tags run -e TAGS=@sauceLogin",
+    "sauce-tests": "npx cypress-tags run -e TAGS=@sauceDemo",
+    "google-tests": "npx cypress-tags run -e TAGS=@google",
+    "amazon-tests": "npx cypress-tags run -e TAGS=@amazon",
+    "facebook-tests": "npx cypress-tags run -e TAGS=@facebook"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Sandeep",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^9.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "cypress-xpath": "^2.0.0",
+    "multiple-cucumber-html-reporter": "^1.21.4",
+    "uuid": "^8.3.2"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "step_definitions": "cypress/support/step_definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  }
+}

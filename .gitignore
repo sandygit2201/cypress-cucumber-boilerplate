@@ -1,0 +1,5 @@
+cypress/cucumber-json
+cypress/reports
+cypress/videos
+node_modules
+package-lock.json

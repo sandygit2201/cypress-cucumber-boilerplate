@@ -1,0 +1,11 @@
+{
+  "testFiles": "**/*.feature",
+  "sauceDemoURL": "https://www.saucedemo.com/",
+  "googleURL": "https://www.google.com/",
+  "facebookURL":"https://www.facebook.com/",
+  "amazonURL":"https://www.amazon.in/",
+  "defaultCommandTimeout": 30000,
+  "projectId": "",
+  "chromeWebSecurity": false,
+  "trashAssetsBeforeRuns": true
+}
